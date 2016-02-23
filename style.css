@@ -89,9 +89,7 @@ h3 {
 }
 
 .logo {
-	/*width: 423px;*/
-	/*height: 110px;*/
-	height: 100%;
+	width: 423px;
 	/*background: #fdf187;*/
 }
 
@@ -151,6 +149,9 @@ input#nav-trigger {
 	border-bottom: 2px solid #fa9c2c;
 }
 
+.nav-top .login {
+	display: none;
+}
 .search-form {
 	position: relative;
 	margin-top: 1em;
@@ -630,6 +631,7 @@ footer a {
 		border-radius: 2px;
 	}
 	.nav-top .login {
+		display: block;
 		font-weight: 700;
 		text-align: center;
 		line-height: 4em;
