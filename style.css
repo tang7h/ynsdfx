@@ -63,7 +63,7 @@ h2:before {
 }
 h2:after {
 	content: '更多';
-	font-size: .5em;
+	font-size: .7em;
 	color: #fa9c2c;
 	position: absolute;
 	right: 0;
@@ -76,12 +76,16 @@ h3 {
 }
 
 .header {
-	background: #fff;
+	height: 120px;
 	position: relative;
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid #eee;
 	background: linear-gradient(rgba(0, 0, 0, 0)62%, rgba(0, 0, 0, .02));
+}
+
+.header h1 {
+	display: none;
 }
 
 .logo {
@@ -115,6 +119,10 @@ h3 {
 
 .main {
 	display: block;
+}
+
+input#nav-trigger {
+	display: none;
 }
 
 .nav-top {
@@ -456,7 +464,7 @@ footer a {
 	margin-bottom: 1em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 	body {
 		/*font-size: 50px;*/
 		background: #eee
@@ -508,9 +516,6 @@ footer a {
 		background: transparent;
 		
 	}
-	.header h1 {
-		display: none;
-	}
 	.header .logo {
 		display: none;
 	}
@@ -550,7 +555,6 @@ footer a {
 	#nav-trigger-label {
 		width: 1.2em;
 		height: 1.2em;
-		overflow: hidden;
 		bottom: 1em;
 		margin-left: 1em;
 		position: absolute;
@@ -563,12 +567,8 @@ footer a {
 		border-radius: 2px;
 		background: rgba(0,0,0,.8);
 		background: rgba(255,255,255,1);
-		box-shadow: 0 1px 0 1px rgba(0,0,0,.2);
+		box-shadow: 0 1px 0 0px rgba(0,0,0,.2),0 3px 6px 1px rgba(0,0,0,.2);
 
-	}
-
-	input#nav-trigger {
-		display: none;
 	}
 
 	#nav-trigger:checked ~ .nav-top {
@@ -678,6 +678,8 @@ footer a {
 	/*文章页*/
 	.article article {
 		padding: 1em;
+		padding-bottom: 5em;
+		background: #fff;
 	}
 	.article article img {
 		width: 100%;
