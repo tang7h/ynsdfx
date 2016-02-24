@@ -129,6 +129,7 @@ input#nav-trigger {
 	font-size: 16px;
 	white-space: nowrap;
 	position: relative;
+	align-self: baseline;
 }
 
 .nav-top ul li {
@@ -166,6 +167,7 @@ input#nav-trigger {
 	position: absolute;
 	top: 7px;
 	right: -12px;
+	display: none;
 }
 
 .search-form input {
@@ -458,6 +460,10 @@ footer a {
 	padding: 0em 20%;
 }
 
+
+.article article img {
+	width: 100%;
+}
 .article article p {
 	max-width: 1220px;
 	font-size: 17px;
@@ -488,6 +494,7 @@ footer a {
 	border-left: 2px solid #fa9c2c;
 	padding-left: .5em;
 	border-radius: 0;
+	outline: none;
 }
 
 .article-footer button {
@@ -496,10 +503,27 @@ footer a {
 	margin-left: .5em;
 }
 
+.article-footer .btn-comments {
+	position: relative;
+}
+.article-footer .btn-comments:after {
+	content: '3';
+	position: absolute;
+	width: 1.2em;
+	height: 1.2em;
+	right: 0;
+	top: 0;
+	color: #fff;
+	background: #fa9c2c;
+	border-radius: 50%;
+	text-align: center;
+	font-weight: 700;
+}
+
 @media screen and (max-width: 768px) {
 	body {
 		/*font-size: 50px;*/
-		background: #eee
+		background: #eee;
 	}
 	h1 {
 		font-size: 15px;
@@ -713,9 +737,6 @@ footer a {
 		padding: 1em;
 		padding-bottom: 5em;
 		background: #fff;
-	}
-	.article article img {
-		width: 100%;
 	}
 
 	.article article .category p {
