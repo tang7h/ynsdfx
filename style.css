@@ -462,7 +462,38 @@ footer a {
 	max-width: 1220px;
 	font-size: 17px;
 	line-height: 2em;
-	margin-bottom: 1em;
+	margin: 1em 0;
+}
+
+.article-footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(255,255,255,1);
+	padding: .5em 1em;
+	box-shadow: 0 -1px 2px rgba(0,0,0,.1);
+}
+.article-footer .btns-wrapper {
+	justify-content: 
+}
+
+.article-footer input {
+	line-height: 2em;
+	height: 24px;
+	border: none;
+	border-left: 2px solid #fa9c2c;
+	padding-left: .5em;
+	border-radius: 0;
+}
+
+.article-footer button {
+	background: transparent;
+	border: none;
+	margin-left: .5em;
 }
 
 @media screen and (max-width: 768px) {
